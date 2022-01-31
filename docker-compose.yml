@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  redis: 
+    image: redislabs/redismod
+    command: --loadmodule /usr/lib/redis/modules/redisai.so ONNX redisai_onnxruntime/redisai_onnxruntime.so
+    ports:
+      - 6379:6379
+
+  rest-api:
+    build: ./rest-api
+    ports:
+      - 5000:5000

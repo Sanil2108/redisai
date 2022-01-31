@@ -1,0 +1,8 @@
+python-dotenv==0.17.1
+redisai==1.2.2
+numpy==1.21.4
+mxnet==1.9.0
+Pillow==7.0.0
+requests==2.22.0
+flask==2.0.2
+Flask-Cors==3.0.10
